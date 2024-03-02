@@ -1,0 +1,3 @@
+pyip
+twine
+pytest
