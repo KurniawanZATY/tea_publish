@@ -1,8 +1,8 @@
 {
   "name": "teapublish",
   "version": "1.0.0",
-  "description": "tea project publihs",
-  "main": "index.py",
+  "description": "Tea Project Publish",
+  "main": "index.js", // Assuming your main entry point is an 'index.js' file
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,13 @@
   "author": "KurniawanZATY",
   "license": "ISC",
   "dependencies": {
-    "pyip": "^1.0.0"
+    "your-dependency-package": "^1.0.0" // Replace with your actual dependency
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KurniawanZATY/tea_publish" // Replace with your actual Git URL
   }
 }
