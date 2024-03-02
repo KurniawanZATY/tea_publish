@@ -5,15 +5,21 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.poetry]
-name = "teapublish"
-version = "1.0.0"
-description = "tea project publish"
+name = "your-tea-project"
+version = "0.1.0"
+description = "Ytea project"
 authors = ["KurniawanZATY"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pyip = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+# Add any development dependencies here
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38']
