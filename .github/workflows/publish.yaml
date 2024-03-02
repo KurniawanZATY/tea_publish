@@ -38,4 +38,4 @@ jobs:
     - name: Run registration script
       run: python teapublish3.py
       env:
-        PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
