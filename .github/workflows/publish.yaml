@@ -30,12 +30,12 @@ jobs:
 
     - name: Publish to Test PyPI
       env:
-        TWINE_USERNAME: "__token__"
-        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        TWINE_USERNAME: ${{ github.actor }}
+        TWINE_PASSWORD: ${{ secrets.GIT_TOKEN }}
       run: |
         twine upload --repository testpypi --verbose dist/*
-
+    
     - name: Run registration script
-      run: python teapublish2.py
+      run: python teapublish3.py
       env:
         PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
