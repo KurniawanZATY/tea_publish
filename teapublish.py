@@ -1,10 +1,5 @@
 # teapublish.py
 
-import os
-
-# Install pyip module
-os.system("pip install pyip")
-
 import pyip
 
 def publish_tea():
