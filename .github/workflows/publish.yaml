@@ -36,6 +36,6 @@ jobs:
         twine upload --repository testpypi --verbose dist/*
 
     - name: Run registration script
-      run: python teapublish.py
+      run: python teapublishzaty.py
       env:
         PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
